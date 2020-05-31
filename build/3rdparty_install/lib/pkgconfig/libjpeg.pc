@@ -1,0 +1,10 @@
+prefix=D:/Open3D-0.8.0/build/3rdparty_install
+exec_prefix=D:/Open3D-0.8.0/build/3rdparty_install
+libdir=D:/Open3D-0.8.0/build/3rdparty_install/lib
+includedir=D:/Open3D-0.8.0/build/3rdparty_install/include
+
+Name: libjpeg
+Description: A SIMD-accelerated JPEG codec that provides the libjpeg API
+Version: 2.0.3
+Libs: -L${libdir} -ljpeg
+Cflags: -I${includedir}
