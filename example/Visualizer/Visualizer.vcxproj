@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Visualizer.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9C2549C1-8E9A-3ED5-AE42-7E7DF53DE300}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>Visualizer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\build\bin\examples\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Visualizer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Visualizer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Open3D-0.8.0\example\release</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Visualizer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\build\bin\examples\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Visualizer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Visualizer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\build\bin\examples\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Visualizer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Visualizer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\build\3rdparty_install\include;..\..\src;..\..\3rdparty;..\..\3rdparty\dirent;..\..\3rdparty\dirent\dirent;..\..\3rdparty\Eigen;..\..\3rdparty\flann;..\..\3rdparty\flann\algorithms;..\..\3rdparty\flann\flann;..\..\3rdparty\flann\flann\algorithms;..\..\3rdparty\flann\flann\nn;..\..\3rdparty\flann\flann\util;..\..\3rdparty\flann\nn;..\..\3rdparty\flann\util;..\..\3rdparty\glew\include;..\..\3rdparty\GLFW\include;..\..\3rdparty\jsoncpp\include;..\..\3rdparty\liblzf;..\..\3rdparty\liblzf\liblzf;..\..\3rdparty\tomasakeninemoeller\include;..\..\3rdparty\tomasakeninemoeller\include\tomasakeninemoeller;..\..\3rdparty\libpng;..\..\3rdparty\rply;..\..\3rdparty\rply\etc;..\..\3rdparty\rply\manual;..\..\3rdparty\rply\rply;..\..\3rdparty\rply\rply\etc;..\..\3rdparty\rply\rply\manual;..\..\3rdparty\tinyfiledialogs\include;..\..\3rdparty\tinygltf;..\..\3rdparty\tinyobjloader;..\..\3rdparty\qhull\src;..\..\3rdparty\fmt\include;..\..\3rdparty\PoissonRecon;..\..\3rdparty\librealsense\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;NOMINMAX;_USE_MATH_DEFINES;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;NOMINMAX;_USE_MATH_DEFINES;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\build\3rdparty_install\include;..\..\src;..\..\3rdparty;..\..\3rdparty\dirent;..\..\3rdparty\dirent\dirent;..\..\3rdparty\Eigen;..\..\3rdparty\flann;..\..\3rdparty\flann\algorithms;..\..\3rdparty\flann\flann;..\..\3rdparty\flann\flann\algorithms;..\..\3rdparty\flann\flann\nn;..\..\3rdparty\flann\flann\util;..\..\3rdparty\flann\nn;..\..\3rdparty\flann\util;..\..\3rdparty\glew\include;..\..\3rdparty\GLFW\include;..\..\3rdparty\jsoncpp\include;..\..\3rdparty\liblzf;..\..\3rdparty\liblzf\liblzf;..\..\3rdparty\tomasakeninemoeller\include;..\..\3rdparty\tomasakeninemoeller\include\tomasakeninemoeller;..\..\3rdparty\libpng;..\..\3rdparty\rply;..\..\3rdparty\rply\etc;..\..\3rdparty\rply\manual;..\..\3rdparty\rply\rply;..\..\3rdparty\rply\rply\etc;..\..\3rdparty\rply\rply\manual;..\..\3rdparty\tinyfiledialogs\include;..\..\3rdparty\tinygltf;..\..\3rdparty\tinyobjloader;..\..\3rdparty\qhull\src;..\..\3rdparty\fmt\include;..\..\3rdparty\PoissonRecon;..\..\3rdparty\librealsense\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\build\3rdparty_install\include;..\..\src;..\..\3rdparty;..\..\3rdparty\dirent;..\..\3rdparty\dirent\dirent;..\..\3rdparty\Eigen;..\..\3rdparty\flann;..\..\3rdparty\flann\algorithms;..\..\3rdparty\flann\flann;..\..\3rdparty\flann\flann\algorithms;..\..\3rdparty\flann\flann\nn;..\..\3rdparty\flann\flann\util;..\..\3rdparty\flann\nn;..\..\3rdparty\flann\util;..\..\3rdparty\glew\include;..\..\3rdparty\GLFW\include;..\..\3rdparty\jsoncpp\include;..\..\3rdparty\liblzf;..\..\3rdparty\liblzf\liblzf;..\..\3rdparty\tomasakeninemoeller\include;..\..\3rdparty\tomasakeninemoeller\include\tomasakeninemoeller;..\..\3rdparty\libpng;..\..\3rdparty\rply;..\..\3rdparty\rply\etc;..\..\3rdparty\rply\manual;..\..\3rdparty\rply\rply;..\..\3rdparty\rply\rply\etc;..\..\3rdparty\rply\rply\manual;..\..\3rdparty\tinyfiledialogs\include;..\..\3rdparty\tinygltf;..\..\3rdparty\tinyobjloader;..\..\3rdparty\qhull\src;..\..\3rdparty\fmt\include;..\..\3rdparty\PoissonRecon;..\..\3rdparty\librealsense\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Debug\Open3D.lib;opengl32.lib;glu32.lib;opengl32.lib;glu32.lib;..\..\lib\Debug\glew.lib;..\..\lib\Debug\glfw3.lib;turbojpeg-static.lib;..\..\lib\Debug\jsoncpp.lib;..\..\lib\Debug\png.lib;..\..\lib\Debug\zlib.lib;..\..\lib\Debug\tinyfiledialogs.lib;..\..\lib\Debug\tinyobjloader.lib;..\..\lib\Debug\qhullcpp.lib;..\..\lib\Debug\qhullstatic_r.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Open3D;../../Open3D/$(Configuration);../../build/3rdparty_install/lib;../../build/3rdparty_install/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>../../build/lib/Debug/Visualizer.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../build/bin/examples/Debug/Visualizer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\build\3rdparty_install\include;..\..\src;..\..\3rdparty;..\..\3rdparty\dirent;..\..\3rdparty\dirent\dirent;..\..\3rdparty\Eigen;..\..\3rdparty\flann;..\..\3rdparty\flann\algorithms;..\..\3rdparty\flann\flann;..\..\3rdparty\flann\flann\algorithms;..\..\3rdparty\flann\flann\nn;..\..\3rdparty\flann\flann\util;..\..\3rdparty\flann\nn;..\..\3rdparty\flann\util;..\..\3rdparty\glew\include;..\..\3rdparty\GLFW\include;..\..\3rdparty\jsoncpp\include;..\..\3rdparty\liblzf;..\..\3rdparty\liblzf\liblzf;..\..\3rdparty\tomasakeninemoeller\include;..\..\3rdparty\tomasakeninemoeller\include\tomasakeninemoeller;..\..\3rdparty\libpng;..\..\3rdparty\rply;..\..\3rdparty\rply\etc;..\..\3rdparty\rply\manual;..\..\3rdparty\rply\rply;..\..\3rdparty\rply\rply\etc;..\..\3rdparty\rply\rply\manual;..\..\3rdparty\tinyfiledialogs\include;..\..\3rdparty\tinygltf;..\..\3rdparty\tinyobjloader;..\..\3rdparty\qhull\src;..\..\3rdparty\fmt\include;..\..\3rdparty\PoissonRecon;..\..\3rdparty\librealsense\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;NOMINMAX;_USE_MATH_DEFINES;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;NOMINMAX;_USE_MATH_DEFINES;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\build\3rdparty_install\include;..\..\src;..\..\3rdparty;..\..\3rdparty\dirent;..\..\3rdparty\dirent\dirent;..\..\3rdparty\Eigen;..\..\3rdparty\flann;..\..\3rdparty\flann\algorithms;..\..\3rdparty\flann\flann;..\..\3rdparty\flann\flann\algorithms;..\..\3rdparty\flann\flann\nn;..\..\3rdparty\flann\flann\util;..\..\3rdparty\flann\nn;..\..\3rdparty\flann\util;..\..\3rdparty\glew\include;..\..\3rdparty\GLFW\include;..\..\3rdparty\jsoncpp\include;..\..\3rdparty\liblzf;..\..\3rdparty\liblzf\liblzf;..\..\3rdparty\tomasakeninemoeller\include;..\..\3rdparty\tomasakeninemoeller\include\tomasakeninemoeller;..\..\3rdparty\libpng;..\..\3rdparty\rply;..\..\3rdparty\rply\etc;..\..\3rdparty\rply\manual;..\..\3rdparty\rply\rply;..\..\3rdparty\rply\rply\etc;..\..\3rdparty\rply\rply\manual;..\..\3rdparty\tinyfiledialogs\include;..\..\3rdparty\tinygltf;..\..\3rdparty\tinyobjloader;..\..\3rdparty\qhull\src;..\..\3rdparty\fmt\include;..\..\3rdparty\PoissonRecon;..\..\3rdparty\librealsense\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\build\3rdparty_install\include;..\..\src;..\..\3rdparty;..\..\3rdparty\dirent;..\..\3rdparty\dirent\dirent;..\..\3rdparty\Eigen;..\..\3rdparty\flann;..\..\3rdparty\flann\algorithms;..\..\3rdparty\flann\flann;..\..\3rdparty\flann\flann\algorithms;..\..\3rdparty\flann\flann\nn;..\..\3rdparty\flann\flann\util;..\..\3rdparty\flann\nn;..\..\3rdparty\flann\util;..\..\3rdparty\glew\include;..\..\3rdparty\GLFW\include;..\..\3rdparty\jsoncpp\include;..\..\3rdparty\liblzf;..\..\3rdparty\liblzf\liblzf;..\..\3rdparty\tomasakeninemoeller\include;..\..\3rdparty\tomasakeninemoeller\include\tomasakeninemoeller;..\..\3rdparty\libpng;..\..\3rdparty\rply;..\..\3rdparty\rply\etc;..\..\3rdparty\rply\manual;..\..\3rdparty\rply\rply;..\..\3rdparty\rply\rply\etc;..\..\3rdparty\rply\rply\manual;..\..\3rdparty\tinyfiledialogs\include;..\..\3rdparty\tinygltf;..\..\3rdparty\tinyobjloader;..\..\3rdparty\qhull\src;..\..\3rdparty\fmt\include;..\..\3rdparty\PoissonRecon;..\..\3rdparty\librealsense\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Open3D.lib;opengl32.lib;glu32.lib;glew.lib;glfw3.lib;turbojpeg-static.lib;jsoncpp.lib;png.lib;zlib.lib;tinyfiledialogs.lib;tinyobjloader.lib;qhullcpp.lib;qhullstatic_r.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\build\3rdparty_install\lib;..\..\build\3rdparty_install\lib\$(Configuration);..\..\build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Open3D-0.8.0/build/lib/Release/Visualizer.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Open3D-0.8.0/build/bin/examples/Release/Visualizer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\build\3rdparty_install\include;..\..\src;..\..\3rdparty;..\..\3rdparty\dirent;..\..\3rdparty\dirent\dirent;..\..\3rdparty\Eigen;..\..\3rdparty\flann;..\..\3rdparty\flann\algorithms;..\..\3rdparty\flann\flann;..\..\3rdparty\flann\flann\algorithms;..\..\3rdparty\flann\flann\nn;..\..\3rdparty\flann\flann\util;..\..\3rdparty\flann\nn;..\..\3rdparty\flann\util;..\..\3rdparty\glew\include;..\..\3rdparty\GLFW\include;..\..\3rdparty\jsoncpp\include;..\..\3rdparty\liblzf;..\..\3rdparty\liblzf\liblzf;..\..\3rdparty\tomasakeninemoeller\include;..\..\3rdparty\tomasakeninemoeller\include\tomasakeninemoeller;..\..\3rdparty\libpng;..\..\3rdparty\rply;..\..\3rdparty\rply\etc;..\..\3rdparty\rply\manual;..\..\3rdparty\rply\rply;..\..\3rdparty\rply\rply\etc;..\..\3rdparty\rply\rply\manual;..\..\3rdparty\tinyfiledialogs\include;..\..\3rdparty\tinygltf;..\..\3rdparty\tinyobjloader;..\..\3rdparty\qhull\src;..\..\3rdparty\fmt\include;..\..\3rdparty\PoissonRecon;..\..\3rdparty\librealsense\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;NOMINMAX;_USE_MATH_DEFINES;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;NOMINMAX;_USE_MATH_DEFINES;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\build\3rdparty_install\include;..\..\src;..\..\3rdparty;..\..\3rdparty\dirent;..\..\3rdparty\dirent\dirent;..\..\3rdparty\Eigen;..\..\3rdparty\flann;..\..\3rdparty\flann\algorithms;..\..\3rdparty\flann\flann;..\..\3rdparty\flann\flann\algorithms;..\..\3rdparty\flann\flann\nn;..\..\3rdparty\flann\flann\util;..\..\3rdparty\flann\nn;..\..\3rdparty\flann\util;..\..\3rdparty\glew\include;..\..\3rdparty\GLFW\include;..\..\3rdparty\jsoncpp\include;..\..\3rdparty\liblzf;..\..\3rdparty\liblzf\liblzf;..\..\3rdparty\tomasakeninemoeller\include;..\..\3rdparty\tomasakeninemoeller\include\tomasakeninemoeller;..\..\3rdparty\libpng;..\..\3rdparty\rply;..\..\3rdparty\rply\etc;..\..\3rdparty\rply\manual;..\..\3rdparty\rply\rply;..\..\3rdparty\rply\rply\etc;..\..\3rdparty\rply\rply\manual;..\..\3rdparty\tinyfiledialogs\include;..\..\3rdparty\tinygltf;..\..\3rdparty\tinyobjloader;..\..\3rdparty\qhull\src;..\..\3rdparty\fmt\include;..\..\3rdparty\PoissonRecon;..\..\3rdparty\librealsense\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\build\3rdparty_install\include;..\..\src;..\..\3rdparty;..\..\3rdparty\dirent;..\..\3rdparty\dirent\dirent;..\..\3rdparty\Eigen;..\..\3rdparty\flann;..\..\3rdparty\flann\algorithms;..\..\3rdparty\flann\flann;..\..\3rdparty\flann\flann\algorithms;..\..\3rdparty\flann\flann\nn;..\..\3rdparty\flann\flann\util;..\..\3rdparty\flann\nn;..\..\3rdparty\flann\util;..\..\3rdparty\glew\include;..\..\3rdparty\GLFW\include;..\..\3rdparty\jsoncpp\include;..\..\3rdparty\liblzf;..\..\3rdparty\liblzf\liblzf;..\..\3rdparty\tomasakeninemoeller\include;..\..\3rdparty\tomasakeninemoeller\include\tomasakeninemoeller;..\..\3rdparty\libpng;..\..\3rdparty\rply;..\..\3rdparty\rply\etc;..\..\3rdparty\rply\manual;..\..\3rdparty\rply\rply;..\..\3rdparty\rply\rply\etc;..\..\3rdparty\rply\rply\manual;..\..\3rdparty\tinyfiledialogs\include;..\..\3rdparty\tinygltf;..\..\3rdparty\tinyobjloader;..\..\3rdparty\qhull\src;..\..\3rdparty\fmt\include;..\..\3rdparty\PoissonRecon;..\..\3rdparty\librealsense\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\MinSizeRel\Open3D.lib;opengl32.lib;glu32.lib;opengl32.lib;glu32.lib;..\..\lib\MinSizeRel\glew.lib;..\..\lib\MinSizeRel\glfw3.lib;turbojpeg-static.lib;..\..\lib\MinSizeRel\jsoncpp.lib;..\..\lib\MinSizeRel\png.lib;..\..\lib\MinSizeRel\zlib.lib;..\..\lib\MinSizeRel\tinyfiledialogs.lib;..\..\lib\MinSizeRel\tinyobjloader.lib;..\..\lib\MinSizeRel\qhullcpp.lib;..\..\lib\MinSizeRel\qhullstatic_r.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Open3D;../../Open3D/$(Configuration);../../build/3rdparty_install/lib;../../build/3rdparty_install/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>../../build/lib/MinSizeRel/Visualizer.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../build/bin/examples/MinSizeRel/Visualizer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\build\3rdparty_install\include;..\..\src;..\..\3rdparty;..\..\3rdparty\dirent;..\..\3rdparty\dirent\dirent;..\..\3rdparty\Eigen;..\..\3rdparty\flann;..\..\3rdparty\flann\algorithms;..\..\3rdparty\flann\flann;..\..\3rdparty\flann\flann\algorithms;..\..\3rdparty\flann\flann\nn;..\..\3rdparty\flann\flann\util;..\..\3rdparty\flann\nn;..\..\3rdparty\flann\util;..\..\3rdparty\glew\include;..\..\3rdparty\GLFW\include;..\..\3rdparty\jsoncpp\include;..\..\3rdparty\liblzf;..\..\3rdparty\liblzf\liblzf;..\..\3rdparty\tomasakeninemoeller\include;..\..\3rdparty\tomasakeninemoeller\include\tomasakeninemoeller;..\..\3rdparty\libpng;..\..\3rdparty\rply;..\..\3rdparty\rply\etc;..\..\3rdparty\rply\manual;..\..\3rdparty\rply\rply;..\..\3rdparty\rply\rply\etc;..\..\3rdparty\rply\rply\manual;..\..\3rdparty\tinyfiledialogs\include;..\..\3rdparty\tinygltf;..\..\3rdparty\tinyobjloader;..\..\3rdparty\qhull\src;..\..\3rdparty\fmt\include;..\..\3rdparty\PoissonRecon;..\..\3rdparty\librealsense\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;NOMINMAX;_USE_MATH_DEFINES;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;GLEW_STATIC;NOMINMAX;_USE_MATH_DEFINES;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\build\3rdparty_install\include;..\..\src;..\..\3rdparty;..\..\3rdparty\dirent;..\..\3rdparty\dirent\dirent;..\..\3rdparty\Eigen;..\..\3rdparty\flann;..\..\3rdparty\flann\algorithms;..\..\3rdparty\flann\flann;..\..\3rdparty\flann\flann\algorithms;..\..\3rdparty\flann\flann\nn;..\..\3rdparty\flann\flann\util;..\..\3rdparty\flann\nn;..\..\3rdparty\flann\util;..\..\3rdparty\glew\include;..\..\3rdparty\GLFW\include;..\..\3rdparty\jsoncpp\include;..\..\3rdparty\liblzf;..\..\3rdparty\liblzf\liblzf;..\..\3rdparty\tomasakeninemoeller\include;..\..\3rdparty\tomasakeninemoeller\include\tomasakeninemoeller;..\..\3rdparty\libpng;..\..\3rdparty\rply;..\..\3rdparty\rply\etc;..\..\3rdparty\rply\manual;..\..\3rdparty\rply\rply;..\..\3rdparty\rply\rply\etc;..\..\3rdparty\rply\rply\manual;..\..\3rdparty\tinyfiledialogs\include;..\..\3rdparty\tinygltf;..\..\3rdparty\tinyobjloader;..\..\3rdparty\qhull\src;..\..\3rdparty\fmt\include;..\..\3rdparty\PoissonRecon;..\..\3rdparty\librealsense\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\build\3rdparty_install\include;..\..\src;..\..\3rdparty;..\..\3rdparty\dirent;..\..\3rdparty\dirent\dirent;..\..\3rdparty\Eigen;..\..\3rdparty\flann;..\..\3rdparty\flann\algorithms;..\..\3rdparty\flann\flann;..\..\3rdparty\flann\flann\algorithms;..\..\3rdparty\flann\flann\nn;..\..\3rdparty\flann\flann\util;..\..\3rdparty\flann\nn;..\..\3rdparty\flann\util;..\..\3rdparty\glew\include;..\..\3rdparty\GLFW\include;..\..\3rdparty\jsoncpp\include;..\..\3rdparty\liblzf;..\..\3rdparty\liblzf\liblzf;..\..\3rdparty\tomasakeninemoeller\include;..\..\3rdparty\tomasakeninemoeller\include\tomasakeninemoeller;..\..\3rdparty\libpng;..\..\3rdparty\rply;..\..\3rdparty\rply\etc;..\..\3rdparty\rply\manual;..\..\3rdparty\rply\rply;..\..\3rdparty\rply\rply\etc;..\..\3rdparty\rply\rply\manual;..\..\3rdparty\tinyfiledialogs\include;..\..\3rdparty\tinygltf;..\..\3rdparty\tinyobjloader;..\..\3rdparty\qhull\src;..\..\3rdparty\fmt\include;..\..\3rdparty\PoissonRecon;..\..\3rdparty\librealsense\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\RelWithDebInfo\Open3D.lib;opengl32.lib;glu32.lib;opengl32.lib;glu32.lib;..\..\lib\RelWithDebInfo\glew.lib;..\..\lib\RelWithDebInfo\glfw3.lib;turbojpeg-static.lib;..\..\lib\RelWithDebInfo\jsoncpp.lib;..\..\lib\RelWithDebInfo\png.lib;..\..\lib\RelWithDebInfo\zlib.lib;..\..\lib\RelWithDebInfo\tinyfiledialogs.lib;..\..\lib\RelWithDebInfo\tinyobjloader.lib;..\..\lib\RelWithDebInfo\qhullcpp.lib;..\..\lib\RelWithDebInfo\qhullstatic_r.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Open3D;../../Open3D/$(Configuration);../../build/3rdparty_install/lib;../../build/3rdparty_install/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>../../build/lib/RelWithDebInfo/Visualizer.lib</ImportLibrary>
+      <ProgramDataBaseFile>../../build/bin/examples/RelWithDebInfo/Visualizer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
